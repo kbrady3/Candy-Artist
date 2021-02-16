@@ -17,16 +17,27 @@
 		padding: 5px;
 		margin: 0 auto;
 	}
+	input{
+		margin: 5px;
+	}
+	img{
+		width: 50%;
+		margin: 0 auto;
+		border-radius: 50%;
+	}
 </style>
 <meta charset="ISO-8859-1">
-<title>Candy Artist</title>
+<title>Glass Candy Result</title>
 </head>
 <body>
-	<h1>Candy Artist</h1>
-	<p>We're glad you're here! On Candy Artist, you can create delicious, beautiful candies.</p>
 	<div class="mainContent">
-		<p><a href="glassCandy.jsp">Broken Glass Candy</a></p>
-		<p><a href="truffles.jsp">Drizzled Chocolate Truffles</a></p>
+	${glass.getIngredient1()} First Ingredient <br />
+	${glass.getIngredient2()} Second Ingredient <br />
+	${glass.getIngredient3()} Third Ingredient <br />
 	</div>
+	<br>
+	<img src="glassCandy.jpg">
+		<br>
+	<p><a href="index.jsp">Back to homepage</a></p>
 </body>
 </html>
